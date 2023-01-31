@@ -25,7 +25,7 @@ function submitscore(){
     </div>`
 
     }
-    if (score <= 7) {
+    if (score > 4 && score <= 7) {
         document.body.innerHTML = ` <div class="bodycontainer">
         <div class="scorecontainer">
             <article id="article" class="averagescore">"Your score is ${score}"</article>
@@ -33,7 +33,7 @@ function submitscore(){
         </div>
     </div>`
 }
-    if (score <= 10) {
+    if (score > 7 && score <= 10) {
         document.body.innerHTML = ` <div class="bodycontainer">
         <div class="scorecontainer">
             <article id="article" class="goodscore">"Your score is ${score}"</article>
